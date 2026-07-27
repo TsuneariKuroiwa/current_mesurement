@@ -1,0 +1,226 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM15 ‘‚«‚İ
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM12
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM12
+COM12: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair01_20260716-180315.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair01_20260716-180315.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM12
+COM12: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF (ãƒªãƒ¬ãƒ¼é–‹)
+[wait sequence] c‚è 210s / 240s
+[wait sequence] c‚è 180s / 240s
+[wait sequence] c‚è 150s / 240s
+[wait sequence] c‚è 120s / 240s
+[wait sequence] c‚è 90s / 240s
+[wait sequence] c‚è 60s / 240s
+[wait sequence] c‚è 30s / 240s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[verify] starting: C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\screening\screening_verify.py --pair-id 1 --v5-port COM15 --duration-sec 90.0 --out-prefix screening_pair01_20260716-180315
+[verify] arduino-cli ‚Å nrf_wifi_connection_test ¨ COM15 ‘‚«‚İ
+[serial] nRF52840 WiFiÚ‘±Šm”FƒeƒXƒgƒvƒƒOƒ‰ƒ€
+[serial] 5•bŠÔŠu‚Å©“®ƒXƒLƒƒƒ“‚ğÀs‚µ‚Ü‚·
+[serial] ========================================
+[serial] WiFiÚ‘±Šm”FƒeƒXƒg
+[serial] ========================================
+[serial] ESP32 “dŒ¹ON...
+[serial]   <- READY óM (416ms)
+[serial] WiFiƒXƒLƒƒƒ“ŠJn (10•b)...
+[serial]   <- OK SCAN 10000
+[serial]   <- BEGIN_SCAN 10000 300
+[serial]   <- DEV 00:24:A5:65:CD:C0 RSSI -55 TYPE B SSID matsushita_lab
+[serial]   <- DEV 18:EC:E7:25:6D:04 RSSI -80 TYPE B SSID Extender-G-6D04
+[serial]   <- DEV 2C:1A:05:D5:9C:60 RSSI -56 TYPE B SSID Wi2eap
+[serial]   <- DEV 2C:1A:05:D5:9C:61 RSSI -57 TYPE B SSID eduroam
+[serial]   <- DEV 2C:1A:05:D5:9C:62 RSSI -57 TYPE B SSID odins-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:63 RSSI -59 TYPE B SSID <hidden>
+[serial]   <- DEV 2C:1A:05:D5:9C:64 RSSI -57 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:65 RSSI -59 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 3A:77:07:6A:CD:27 RSSI -75 TYPE B SSID eufy Clean X10 Pro Omni-CD27
+[serial]   <- DEV 54:07:7D:78:14:02 RSSI -79 TYPE B SSID melab-2g
+[serial]   <- DEV 54:9B:49:3C:79:AA RSSI -72 TYPE B SSID MiuraLab
+[serial]   <- DEV 54:9B:49:E7:23:FE RSSI -51 TYPE B SSID SPW_X12_b8c9c5
+[serial]   <- DEV 5A:9B:49:3C:14:12 RSSI -81 TYPE B SSID aterm-7e5222-5s
+[serial]   <- DEV 5C:E4:2A:F9:7F:0E RSSI -81 TYPE P SSID <broadcast>
+[serial]   <- DEV 5E:9B:49:3C:79:AA RSSI -74 TYPE B SSID <hidden>
+[serial]   <- DEV 60:84:BD:F1:C5:28 RSSI -75 TYPE B SSID Buffalo-G-C528
+[serial]   <- DEV 60:84:BD:F2:D3:40 RSSI -60 TYPE B SSID ap-2_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:23:20 RSSI -59 TYPE B SSID ap-3_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:69:30 RSSI -56 TYPE B SSID ap-1_bigdata-lab
+[serial]   <- DEV 6C:8D:77:7F:F5:60 RSSI -79 TYPE B SSID Wi2eap
+[serial]   <- DEV 6C:8D:77:7F:F5:61 RSSI -79 TYPE B SSID eduroam
+[serial]   <- DEV 6C:8D:77:7F:F5:62 RSSI -80 TYPE B SSID odins-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:63 RSSI -80 TYPE B SSID <hidden>
+[serial]   <- DEV 6C:8D:77:7F:F5:64 RSSI -79 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:65 RSSI -80 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 80:91:33:12:D8:08 RSSI -51 TYPE B SSID DaikinAP53338
+[serial]   <- DEV 80:91:33:13:1D:D3 RSSI -56 TYPE B SSID DaikinAP24806
+[serial]   <- DEV 80:91:33:13:8E:70 RSSI -51 TYPE B SSID DaikinAP40122
+[serial]   <- DEV 84:F1:47:19:0C:41 RSSI -82 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:19:0C:43 RSSI -78 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:19:0C:44 RSSI -81 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 84:F1:47:33:74:61 RSSI -75 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:33:74:63 RSSI -77 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:33:74:64 RSSI -80 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 84:F1:47:33:74:65 RSSI -77 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 8A:78:48:E4:53:E5 RSSI -77 TYPE B SSID Higashi-AX
+[serial]   <- DEV 8A:78:48:E4:55:19 RSSI -75 TYPE B SSID mc-lab-wireless
+[serial]   <- DEV 8E:78:48:E4:53:E5 RSSI -81 TYPE B SSID mc-lab-wireless
+[serial]   <- DEV 8E:78:48:E4:55:19 RSSI -80 TYPE B SSID <hidden>
+[serial]   <- DEV AC:44:F2:24:57:38 RSSI -82 TYPE B SSID SuzukiLab_wifi
+[serial]   <- DEV AC:44:F2:54:D7:58 RSSI -73 TYPE B SSID waka-lab-2.4G
+[serial]   <- DEV AC:44:F2:54:D7:59 RSSI -72 TYPE B SSID waka-lab-guest
+[serial]   <- DEV BC:C3:42:0E:54:30 RSSI -82 TYPE P SSID 001601C6DF45_G
+[serial]   <- DEV BC:C3:42:20:D8:08 RSSI -74 TYPE P SSID Higashi-Lab-AM
+[serial]   <- DEV C0:25:A2:F3:7B:5E RSSI -75 TYPE B SSID aterm-171a0c-g
+[serial]   <- DEV D8:B3:2F:98:25:B7 RSSI -82 TYPE P SSID odins-1x
+[serial]   <- DEV F4:D1:08:B1:86:51 RSSI -79 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw
+[serial]   <- SUMMARY DEVICES 47 CLOSE 14 FAR 33
+[serial]   <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND
+[serial]   <- TARGET FA:13:E8:24:36:16 NOTFOUND
+[serial]   <- END_SCAN
+[serial] ----------------------------------------
+[serial] 47‘ä‚ÌƒfƒoƒCƒX‚ğŒŸo
+[serial] -> ƒeƒXƒgOK
+[serial] ========================================
+[serial] ========================================
+[serial] WiFiÚ‘±Šm”FƒeƒXƒg
+[serial] ========================================
+[serial] ESP32 “dŒ¹ON...
+[serial]   <- READY óM (425ms)
+[serial] WiFiƒXƒLƒƒƒ“ŠJn (10•b)...
+[serial]   <- OK SCAN 10000
+[serial]   <- BEGIN_SCAN 10000 300
+[serial]   <- DEV 00:24:A5:65:CD:C0 RSSI -54 TYPE B SSID matsushita_lab
+[serial]   <- DEV 2C:1A:05:D5:9C:60 RSSI -54 TYPE B SSID Wi2eap
+[serial]   <- DEV 2C:1A:05:D5:9C:61 RSSI -54 TYPE B SSID eduroam
+[serial]   <- DEV 2C:1A:05:D5:9C:62 RSSI -55 TYPE B SSID odins-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:63 RSSI -54 TYPE B SSID <hidden>
+[serial]   <- DEV 2C:1A:05:D5:9C:64 RSSI -57 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:65 RSSI -57 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 3A:77:07:6A:CD:27 RSSI -73 TYPE B SSID eufy Clean X10 Pro Omni-CD27
+[serial]   <- DEV 3A:F1:32:A8:93:27 RSSI -46 TYPE P SSID matsushita_lab
+[serial]   <- DEV 46:DC:24:35:44:F4 RSSI -49 TYPE P SSID matsushita_lab
+[serial]   <- DEV 48:D6:D5:06:B4:50 RSSI -51 TYPE P SSID ap-1_bigdata-lab
+[serial]   <- DEV 52:47:D3:E5:8F:8F RSSI -46 TYPE P SSID <broadcast>
+[serial]   <- DEV 54:9B:49:E7:23:FE RSSI -57 TYPE B SSID SPW_X12_b8c9c5
+[serial]   <- DEV 5E:9B:49:3C:79:AA RSSI -71 TYPE B SSID <hidden>
+[serial]   <- DEV 60:84:BD:F2:D3:40 RSSI -59 TYPE B SSID ap-2_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:23:20 RSSI -58 TYPE B SSID ap-3_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:69:30 RSSI -56 TYPE B SSID ap-1_bigdata-lab
+[serial]   <- DEV 68:E1:DC:34:02:31 RSSI -86 TYPE B SSID <hidden>
+[serial]   <- DEV 6C:8D:77:7F:F5:60 RSSI -80 TYPE B SSID Wi2eap
+[serial]   <- DEV 6C:8D:77:7F:F5:62 RSSI -79 TYPE B SSID odins-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:63 RSSI -80 TYPE B SSID <hidden>
+[serial]   <- DEV 6C:8D:77:82:26:44 RSSI -85 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 80:91:33:12:D8:08 RSSI -50 TYPE B SSID DaikinAP53338
+[serial]   <- DEV 80:91:33:13:1D:D3 RSSI -55 TYPE B SSID DaikinAP24806
+[serial]   <- DEV 80:91:33:13:8E:70 RSSI -48 TYPE B SSID DaikinAP40122
+[serial]   <- DEV 84:78:48:E4:53:E5 RSSI -76 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:17:04:A1 RSSI -83 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:19:0C:41 RSSI -81 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:19:0C:43 RSSI -80 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:19:0C:44 RSSI -82 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 84:F1:47:33:74:61 RSSI -78 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:33:74:62 RSSI -77 TYPE B SSID odins-1x
+[serial]   <- DEV 84:F1:47:33:74:63 RSSI -76 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:33:74:64 RSSI -77 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 84:F1:47:33:74:65 RSSI -77 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 8E:78:48:E4:55:19 RSSI -79 TYPE B SSID <hidden>
+[serial]   <- DEV 9E:A6:7E:74:8A:D5 RSSI -81 TYPE B SSID <hidden>
+[serial]   <- DEV AC:44:F2:54:D7:58 RSSI -74 TYPE B SSID waka-lab-2.4G
+[serial]   <- DEV AC:44:F2:54:D7:59 RSSI -74 TYPE B SSID waka-lab-guest
+[serial]   <- DEV B6:4E:26:F0:DE:8F RSSI -85 TYPE B SSID PerEnd_Guest
+[serial]   <- DEV BC:C3:42:0E:54:30 RSSI -83 TYPE P SSID 001601C6DF45_G
+[serial]   <- DEV BC:C3:42:20:D8:08 RSSI -72 TYPE P SSID Higashi-Lab-AM
+[serial]   <- DEV C0:25:A2:F3:7B:5E RSSI -74 TYPE B SSID aterm-171a0c-g
+[serial]   <- DEV E2:A5:86:B9:BB:AD RSSI -49 TYPE P SSID <broadcast>
+[serial]   <- DEV EC:F0:0E:63:8A:59 RSSI -86 TYPE P SSID <broadcast>
+[serial]   <- DEV EE:EB:B2:A3:23:15 RSSI -47 TYPE P SSID matsushita_lab
+[serial]   <- DEV F4:D1:08:B1:86:51 RSSI -78 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw
+[serial]   <- DEV F8:16:0C:3E:C4:E1 RSSI -80 TYPE B SSID eufy Clean-B-C4E1
+[serial]   <- SUMMARY DEVICES 48 CLOSE 20 FAR 28
+[serial]   <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND
+[serial]   <- TARGET FA:13:E8:24:36:16 NOTFOUND
+[serial]   <- END_SCAN
+[serial] ----------------------------------------
+[serial] 48‘ä‚ÌƒfƒoƒCƒX‚ğŒŸo
+[serial] -> ƒeƒXƒgOK
+[serial] ========================================
+[serial] ========================================
+[serial] WiFiÚ‘±Šm”FƒeƒXƒg
+[serial] ========================================
+[serial] ESP32 “dŒ¹ON...
+[serial]   <- READY óM (420ms)
+[serial] WiFiƒXƒLƒƒƒ“ŠJn (10•b)...
+[serial]   <- OK SCAN 10000
+[serial]   <- BEGIN_SCAN 10000 300
+[serial]   <- DEV 00:24:A5:65:CD:C0 RSSI -53 TYPE B SSID matsushita_lab
+[serial]   <- DEV 04:D4:C4:C4:72:78 RSSI -79 TYPE B SSID research_ap
+[serial]   <- DEV 2C:1A:05:D5:9C:60 RSSI -56 TYPE B SSID Wi2eap
+[serial]   <- DEV 2C:1A:05:D5:9C:61 RSSI -56 TYPE B SSID eduroam
+[serial]   <- DEV 2C:1A:05:D5:9C:62 RSSI -56 TYPE B SSID odins-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:63 RSSI -58 TYPE B SSID <hidden>
+[serial]   <- DEV 2C:1A:05:D5:9C:64 RSSI -58 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:65 RSSI -58 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 34:B8:83:64:BD:A2 RSSI -83 TYPE B SSID odins-1x
+[serial]   <- DEV 34:B8:83:64:BD:A5 RSSI -84 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 3A:77:07:6A:CD:27 RSSI -77 TYPE B SSID eufy Clean X10 Pro Omni-CD27
+[serial]   <- DEV 54:9B:49:E7:23:FE RSSI -54 TYPE B SSID SPW_X12_b8c9c5
+[serial]   <- DEV 5E:9B:49:3C:14:12 RSSI -81 TYPE B SSID <hidden>
+[serial]   <- DEV 5E:9B:49:3C:79:AA RSSI -75 TYPE B SSID <hidden>
+[serial]   <- DEV 60:84:BD:F1:C5:28 RSSI -73 TYPE B SSID Buffalo-G-C528
+[serial]   <- DEV 60:84:BD:F2:D3:40 RSSI -56 TYPE B SSID ap-2_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:23:20 RSSI -55 TYPE B SSID ap-3_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:69:30 RSSI -54 TYPE B SSID ap-1_bigdata-lab
+[serial]   <- DEV 6C:8D:77:7F:F5:60 RSSI -78 TYPE B SSID Wi2eap
+[serial]   <- DEV 6C:8D:77:7F:F5:61 RSSI -80 TYPE B SSID eduroam
+[serial]   <- DEV 6C:8D:77:7F:F5:62 RSSI -78 TYPE B SSID odins-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:63 RSSI -78 TYPE B SSID <hidden>
+[serial]   <- DEV 6C:8D:77:7F:F5:64 RSSI -80 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:65 RSSI -77 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 6C:E4:DA:15:56:66 RSSI -80 TYPE B SSID aterm-7ab32d-g
+[serial]   <- DEV 7A:36:2B:B4:8F:D6 RSSI -44 TYPE P SSID <broadcast>
+[serial]   <- DEV 80:91:33:12:D8:08 RSSI -49 TYPE B SSID DaikinAP53338
+[serial]   <- DEV 80:91:33:13:1D:D3 RSSI -54 TYPE B SSID DaikinAP24806
+[serial]   <- DEV 80:91:33:13:8E:70 RSSI -48 TYPE B SSID DaikinAP40122
+[serial]   <- DEV 84:78:48:E4:53:E5 RSSI -76 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:19:0C:41 RSSI -81 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:19:0C:43 RSSI -82 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:33:74:61 RSSI -75 TYPE B SSID eduroam
+[serial]   <- DEV 84:F1:47:33:74:63 RSSI -80 TYPE B SSID <hidden>
+[serial]   <- DEV 84:F1:47:33:74:65 RSSI -77 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 8A:78:48:E4:53:E5 RSSI -80 TYPE B SSID Higashi-AX
+[serial]   <- DEV 8E:78:48:E4:53:E5 RSSI -76 TYPE B SSID mc-lab-wireless
+[serial]   <- DEV 8E:78:48:E4:55:19 RSSI -79 TYPE B SSID <hidden>
+[serial]   <- DEV 90:65:84:DE:5C:2F RSSI -63 TYPE P SSID DIRECT-
+[serial]   <- DEV 9C:50:D1:49:FE:9F RSSI -86 TYPE B SSID DaikinAP63090
+[serial]   <- DEV 9E:A6:7E:74:8A:D5 RSSI -83 TYPE B SSID <hidden>
+[serial]   <- DEV A0:80:69:F5:74:EF RSSI -49 TYPE P SSID <broadcast>
+[serial]   <- DEV AC:44:F2:24:57:38 RSSI -83 TYPE B SSID SuzukiLab_wifi
+[serial]   <- DEV AC:44:F2:54:D7:58 RSSI -74 TYPE B SSID waka-lab-2.4G
+[serial]   <- DEV AC:44:F2:54:D7:59 RSSI -75 TYPE B SSID waka-lab-guest
+[serial]   <- DEV BC:C3:42:20:D8:08 RSSI -79 TYPE P SSID Higashi-Lab-AM
+[serial]   <- DEV C0:25:A2:F3:7B:5E RSSI -74 TYPE B SSID aterm-171a0c-g
+[serial]   <- DEV EC:F0:0E:63:8A:59 RSSI -83 TYPE P SSID <broadcast>
+[serial]   <- DEV F4:D1:08:B1:86:51 RSSI -78 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw
+[serial]   <- DEV F8:16:0C:3E:C4:E1 RSSI -77 TYPE B SSID eufy Clean-B-C4E1
+[serial]   <- SUMMARY DEVICES 50 CLOSE 17 FAR 33
+[serial]   <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND
+[serial]   <- TARGET FA:13:E8:24:36:16 NOTFOUND
+[serial]   <- END_SCAN
+[serial] ----------------------------------------
+[serial] 50‘ä‚ÌƒfƒoƒCƒX‚ğŒŸo
+[serial] -> ƒeƒXƒgOK
+{"pair_id": 1, "v5_port": "COM15", "upload": {"cmd": "arduino-cli compile --fqbn adafruit:nrf52:feather52840 -u -p COM17 C:\\Users\\tsune\\logbot\\LogbotArduinoCode\\logbot-v5\\v5_umineko_wifi_2026\\nrf_wifi_connection_test", "v5_port_arg": "COM15", "trigger_1200_baud": true, "dfu_port_detected": "COM17", "upload_port_used": "COM17", "returncode": 0, "success": true, "failure_marker": null, "stdout_tail": ["Sketch uses 54992 bytes (6%) of program storage space. Maximum is 815104 bytes.", "Global variables use 8220 bytes (3%) of dynamic memory, leaving 229348 bytes for local variables. Maximum is 237568 bytes.", "Upgrading target on COM17 with DFU package C:\\Users\\tsune\\AppData\\Local\\arduino\\sketches\\EA89A51AC28C3851A7CADCDE3FE70ED5\\nrf_wifi_connection_test.ino.zip. Flow control is disabled, Single bank, Touch disabled", "########################################", "########################################", "############################", "Activating new firmware", "Device programmed."], "stderr_tail": []}, "duration_sec": 90.0, "min_testok": 3, "ok_count": 3, "last_error": "", "log_line_count": 194, "pass": true, "verify_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair01_20260716-180315_verify.json", "log_tail": [{"ts": "2026-07-16T18:09:38.458", "line": "  <- DEV AC:44:F2:24:57:38 RSSI -83 TYPE B SSID SuzukiLab_wifi"}, {"ts": "2026-07-16T18:09:38.462", "line": "  <- DEV AC:44:F2:54:D7:58 RSSI -74 TYPE B SSID waka-lab-2.4G"}, {"ts": "2026-07-16T18:09:38.521", "line": "  <- DEV AC:44:F2:54:D7:59 RSSI -75 TYPE B SSID waka-lab-guest"}, {"ts": "2026-07-16T18:09:38.579", "line": "  <- DEV BC:C3:42:20:D8:08 RSSI -79 TYPE P SSID Higashi-Lab-AM"}, {"ts": "2026-07-16T18:09:38.641", "line": "  <- DEV C0:25:A2:F3:7B:5E RSSI -74 TYPE B SSID aterm-171a0c-g"}, {"ts": "2026-07-16T18:09:38.776", "line": "  <- DEV EC:F0:0E:63:8A:59 RSSI -83 TYPE P SSID <broadcast>"}, {"ts": "2026-07-16T18:09:38.838", "line": "  <- DEV F4:D1:08:B1:86:51 RSSI -78 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw"}, {"ts": "2026-07-16T18:09:38.908", "line": "  <- DEV F8:16:0C:3E:C4:E1 RSSI -77 TYPE B SSID eufy Clean-B-C4E1"}, {"ts": "2026-07-16T18:09:38.910", "line": "  <- SUMMARY DEVICES 50 CLOSE 17 FAR 33"}, {"ts": "2026-07-16T18:09:38.912", "line": "  <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND"}, {"ts": "2026-07-16T18:09:38.945", "line": "  <- TARGET FA:13:E8:24:36:16 NOTFOUND"}, {"ts": "2026-07-16T18:09:38.945", "line": "  <- END_SCAN"}, {"ts": "2026-07-16T18:09:38.945", "line": "----------------------------------------"}, {"ts": "2026-07-16T18:09:38.945", "line": "50‘ä‚ÌƒfƒoƒCƒX‚ğŒŸo"}, {"ts": "2026-07-16T18:09:38.945", "line": "-> ƒeƒXƒgOK"}]}
+
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair01_20260716-180315_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair01_20260716-180315_features.json
+{"pair_id": 1, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair01_20260716-180315.csv", "baseline_median_mA": 0.1, "wifi_on_mean_mA": 134.46672946495855, "global_max_mA": 294.4, "dropout_ratio": 0.015278330880414859, "outlier": true, "reasons": ["baseline_p95=7.70 mA > 5.0 (baseline ‚É spike)"], "verify_pass": true, "verify_ok_count": 3, "verify_last_error": ""}

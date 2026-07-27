@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "pair_id": 1,
+    "v5_port": "COM15",
+    "if_port": "COM12",
+    "upload_error": "Command '['C:\\\\Users\\\\tsune\\\\current_measurement\\\\venv\\\\Scripts\\\\python.exe', 'C:\\\\Users\\\\tsune\\\\logbot\\\\tools\\\\logbot-ctl\\\\logbot_ctl.py', 'reset', 'COM12', '--double']' returned non-zero exit status 1.",
+    "pass": false,
+    "reason": "firmware upload failed"
+  },
+  "log_full": []
+}

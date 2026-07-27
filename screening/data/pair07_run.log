@@ -1,0 +1,16 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM47 ‘‚«‚İ
+[main] EXCEPTION: “d—¬‘ª’è—p firmware ‘‚«‚İ¸”s: marker=Target is not in DFU mode, stderr_tail=[]
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[verify] starting: C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\screening\screening_verify.py --pair-id 7 --v5-port COM47 --duration-sec 90.0 --out-prefix screening_pair07_20260718-185349
+[verify] arduino-cli ‚Å nrf_wifi_connection_test ¨ COM47 ‘‚«‚İ
+{"pair_id": 7, "v5_port": "COM47", "upload_error": "ŒŸØ—p firmware ‘‚«‚İ¸”s: marker=Target is not in DFU mode, stderr_tail=[]", "pass": false, "reason": "firmware upload failed"}
+
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair07_20260718-185349_meta.json
+[done] CSV –¢¶¬ or ‹ó (C:\Users\tsune\current_measurement\screening\data\screening_pair07_20260718-185349.csv)

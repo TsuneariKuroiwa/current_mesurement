@@ -1,0 +1,126 @@
+{
+  "summary": {
+    "pair_id": 1,
+    "v5_port": "COM15",
+    "upload": {
+      "cmd": "arduino-cli compile --fqbn adafruit:nrf52:feather52840 -u -p COM15 C:\\Users\\tsune\\logbot\\LogbotArduinoCode\\logbot-v5\\v5_umineko_wifi_2026\\nrf_wifi_connection_test",
+      "v5_port_arg": "COM15",
+      "dfu_port_detected": null,
+      "upload_port_used": "COM15",
+      "returncode": 0,
+      "success": true,
+      "failure_marker": null,
+      "stdout_tail": [
+        "Sketch uses 54992 bytes (6%) of program storage space. Maximum is 815104 bytes.",
+        "Global variables use 8220 bytes (3%) of dynamic memory, leaving 229348 bytes for local variables. Maximum is 237568 bytes.",
+        "Upgrading target on COM17 with DFU package C:\\Users\\tsune\\AppData\\Local\\arduino\\sketches\\EA89A51AC28C3851A7CADCDE3FE70ED5\\nrf_wifi_connection_test.ino.zip. Flow control is disabled, Single bank, Touch disabled",
+        "########################################",
+        "########################################",
+        "############################",
+        "Activating new firmware",
+        "Device programmed."
+      ],
+      "stderr_tail": []
+    },
+    "duration_sec": 90.0,
+    "min_testok": 3,
+    "ok_count": 0,
+    "last_error": "serial read error: ClearCommError failed (PermissionError(13, 'デバイスがコマンドを認識できません。', None, 22))",
+    "log_line_count": 23,
+    "pass": false
+  },
+  "log_full": [
+    {
+      "ts": "2026-07-16T16:39:21.588",
+      "line": "nRF52840 WiFi接続確認テストプログラム"
+    },
+    {
+      "ts": "2026-07-16T16:39:21.591",
+      "line": "5秒間隔で自動スキャンを実行します"
+    },
+    {
+      "ts": "2026-07-16T16:39:21.625",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-16T16:39:21.625",
+      "line": "WiFi接続確認テスト"
+    },
+    {
+      "ts": "2026-07-16T16:39:21.625",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-16T16:39:21.625",
+      "line": "ESP32 電源ON..."
+    },
+    {
+      "ts": "2026-07-16T16:39:22.008",
+      "line": "  <- READY 受信 (425ms)"
+    },
+    {
+      "ts": "2026-07-16T16:39:22.558",
+      "line": "WiFiスキャン開始 (10秒)..."
+    },
+    {
+      "ts": "2026-07-16T16:39:22.558",
+      "line": "  <- OK SCAN 10000"
+    },
+    {
+      "ts": "2026-07-16T16:39:22.558",
+      "line": "  <- BEGIN_SCAN 10000 300"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.647",
+      "line": "  <- DEV 00:13:EF:2F:17:55 RSSI -58 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.762",
+      "line": "  <- DEV 00:24:A5:65:CD:C0 RSSI -56 TYPE B SSID matsushita_lab"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.763",
+      "line": "  <- DEV 12:F5:FB:9B:E7:FB RSSI -45 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.815",
+      "line": "  <- DEV 2C:1A:05:D5:9C:60 RSSI -50 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.912",
+      "line": "  <- DEV 2C:1A:05:D5:9C:61 RSSI -52 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.926",
+      "line": "  <- DEV 2C:1A:05:D5:9C:62 RSSI -50 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-16T16:39:32.978",
+      "line": "  <- DEV 2C:1A:05:D5:9C:63 RSSI -50 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.045",
+      "line": "  <- DEV 2C:1A:05:D5:9C:64 RSSI -50 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.151",
+      "line": "  <- DEV 2C:1A:05:D5:9C:65 RSSI -50 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.154",
+      "line": "  <- DEV 34:B8:83:64:BD:A0 RSSI -83 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.277",
+      "line": "  <- DEV 34:B8:83:64:BD:A1 RSSI -81 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.277",
+      "line": "  <- DEV 34:B8:83:64:BD:A3 RSSI -82 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-16T16:39:33.286",
+      "line": "  <- DEV 3A:77:07:6A:CD:27 RSSI -81 TYPE B SSID eufy Clean X10 Pro Omni-CD27"
+    }
+  ]
+}

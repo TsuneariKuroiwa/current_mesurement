@@ -1,0 +1,124 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM44 ‘‚«‚İ
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM43
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM43
+COM43: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair06_20260718-183025.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair06_20260718-183025.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM43
+COM43: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF (ãƒªãƒ¬ãƒ¼é–‹)
+[wait sequence] c‚è 120s / 150s
+[wait sequence] c‚è 90s / 150s
+[wait sequence] c‚è 60s / 150s
+[wait sequence] c‚è 30s / 150s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[verify] starting: C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\screening\screening_verify.py --pair-id 6 --v5-port COM44 --duration-sec 90.0 --out-prefix screening_pair06_20260718-183025
+[verify] arduino-cli ‚Å nrf_wifi_connection_test ¨ COM44 ‘‚«‚İ
+[serial] nRF52840 WiFiÚ‘±Šm”FƒeƒXƒgƒvƒƒOƒ‰ƒ€
+[serial] 5•bŠÔŠu‚Å©“®ƒXƒLƒƒƒ“‚ğÀs‚µ‚Ü‚·
+[serial] ========================================
+[serial] WiFiÚ‘±Šm”FƒeƒXƒg
+[serial] ========================================
+[serial] ESP32 “dŒ¹ON...
+[serial]   <- READY óM (411ms)
+[serial] WiFiƒXƒLƒƒƒ“ŠJn (10•b)...
+[serial]   <- OK SCAN 10000
+[serial]   <- BEGIN_SCAN 10000 300
+[serial]   <- DEV 00:01:8E:65:15:5D RSSI -89 TYPE B SSID logitec2nd53
+[serial]   <- DEV 00:24:A5:65:CD:C0 RSSI -61 TYPE B SSID matsushita_lab
+[serial]   <- DEV 04:C4:61:BB:9E:71 RSSI -86 TYPE B SSID DaikinAP77240
+[serial]   <- DEV 04:D9:F5:9E:0A:B0 RSSI -82 TYPE B SSID icn-wireless00
+[serial]   <- DEV 18:EC:E7:25:6D:05 RSSI -87 TYPE B SSID 4528_a
+[serial]   <- DEV 1C:7C:98:C0:2E:CA RSSI -84 TYPE B SSID aterm-0e0553-5p
+[serial]   <- DEV 2C:1A:05:D5:9C:60 RSSI -53 TYPE B SSID Wi2eap
+[serial]   <- DEV 2C:1A:05:D5:9C:61 RSSI -52 TYPE B SSID eduroam
+[serial]   <- DEV 2C:1A:05:D5:9C:62 RSSI -53 TYPE B SSID odins-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:63 RSSI -53 TYPE B SSID <hidden>
+[serial]   <- DEV 2C:1A:05:D5:9C:64 RSSI -53 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:65 RSSI -53 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 34:3D:C4:D6:CD:48 RSSI -86 TYPE B SSID Buffalo-G-CD48
+[serial]   <- DEV 34:B8:83:64:BD:A5 RSSI -86 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 48:D6:D5:06:B4:50 RSSI -57 TYPE P SSID ap-1_bigdata-lab
+[serial]   <- DEV 4C:E6:76:AD:DC:50 RSSI -93 TYPE B SSID B414_guest
+[serial]   <- DEV 54:07:7D:78:50:41 RSSI -85 TYPE B SSID melab-2g
+[serial]   <- DEV 54:9B:49:3C:79:AA RSSI -84 TYPE B SSID MiuraLab
+[serial]   <- DEV 5E:9B:49:3C:79:AA RSSI -83 TYPE B SSID <hidden>
+[serial]   <- DEV 60:84:BD:F1:C5:28 RSSI -78 TYPE B SSID Buffalo-G-C528
+[serial]   <- DEV 60:84:BD:F2:D3:40 RSSI -63 TYPE B SSID ap-2_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:23:20 RSSI -65 TYPE B SSID ap-3_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:69:30 RSSI -59 TYPE B SSID ap-1_bigdata-lab
+[serial]   <- DEV 64:A5:C3:68:66:8C RSSI -93 TYPE B SSID ISTC524HS
+[serial]   <- DEV 6C:E4:DA:15:56:66 RSSI -80 TYPE B SSID aterm-7ab32d-g
+[serial]   <- DEV 6C:E4:DA:4F:03:4E RSSI -86 TYPE B SSID aterm-39740f-g
+[serial]   <- DEV 80:91:33:12:D8:08 RSSI -58 TYPE B SSID DaikinAP53338
+[serial]   <- DEV 80:91:33:13:1D:D3 RSSI -61 TYPE B SSID DaikinAP24806
+[serial]   <- DEV 80:91:33:13:8E:70 RSSI -54 TYPE B SSID DaikinAP40122
+[serial]   <- DEV 8A:78:48:E4:55:19 RSSI -86 TYPE B SSID mc-lab-wireless
+[serial]   <- DEV 8E:78:48:E4:53:E5 RSSI -78 TYPE B SSID mc-lab-wireless
+[serial]   <- DEV 8E:78:48:E4:55:19 RSSI -89 TYPE B SSID <hidden>
+[serial]   <- DEV 9A:A6:7E:6E:C5:25 RSSI -90 TYPE B SSID mlab-wireless6
+[serial]   <- DEV 9A:A6:7E:74:8A:D5 RSSI -82 TYPE B SSID mlab-wireless6
+[serial]   <- DEV 9E:A6:7E:74:8A:D5 RSSI -82 TYPE B SSID <hidden>
+[serial]   <- DEV AC:44:F2:54:D7:58 RSSI -80 TYPE B SSID waka-lab-2.4G
+[serial]   <- DEV BC:C3:42:20:D8:08 RSSI -75 TYPE P SSID Higashi-Lab-AM
+[serial]   <- DEV C4:3C:EA:8F:D8:81 RSSI -64 TYPE B SSID <hidden>
+[serial]   <- DEV C6:3C:EA:8F:D8:83 RSSI -64 TYPE B SSID ap-4_2G_bigdata-lab
+[serial]   <- DEV C6:3C:EA:8F:D8:84 RSSI -66 TYPE B SSID ap-4_2G_bigdata-lab-WPA3
+[serial]   <- DEV F4:D5:80:2F:4E:90 RSSI -92 TYPE B SSID <hidden>
+[serial]   <- DEV F8:16:0C:3E:C4:E1 RSSI -88 TYPE B SSID eufy Clean-B-C4E1
+[serial]   <- DEV F8:94:97:0B:48:E0 RSSI -89 TYPE B SSID Buffalo-2G-48E0
+[serial]   <- DEV FE:19:28:76:A4:B8 RSSI -81 TYPE B SSID Pro 2 D15_2876A4B8
+[serial]   <- SUMMARY DEVICES 44 CLOSE 17 FAR 27
+[serial]   <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND
+[serial]   <- TARGET FA:13:E8:24:36:16 NOTFOUND
+[serial]   <- END_SCAN
+[serial] ----------------------------------------
+[serial] 44‘ä‚ÌƒfƒoƒCƒX‚ğŒŸo
+[serial] -> ƒeƒXƒgOK
+[serial] ========================================
+[serial] ========================================
+[serial] WiFiÚ‘±Šm”FƒeƒXƒg
+[serial] ========================================
+[serial] ESP32 “dŒ¹ON...
+[serial]   <- READY óM (413ms)
+[serial] WiFiƒXƒLƒƒƒ“ŠJn (10•b)...
+[serial]   <- OK SCAN 10000
+[serial]   <- BEGIN_SCAN 10000 300
+[serial]   <- DEV 00:13:EF:2F:17:55 RSSI -59 TYPE P SSID <broadcast>
+[serial]   <- DEV 00:24:A5:65:CD:C0 RSSI -61 TYPE B SSID matsushita_lab
+[serial]   <- DEV 1C:7C:98:C0:2E:CA RSSI -85 TYPE B SSID aterm-0e0553-5p
+[serial]   <- DEV 2C:1A:05:D5:9C:60 RSSI -53 TYPE B SSID Wi2eap
+[serial]   <- DEV 2C:1A:05:D5:9C:61 RSSI -53 TYPE B SSID eduroam
+[serial]   <- DEV 2C:1A:05:D5:9C:62 RSSI -53 TYPE B SSID odins-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:63 RSSI -54 TYPE B SSID <hidden>
+[serial]   <- DEV 2C:1A:05:D5:9C:64 RSSI -53 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 2C:1A:05:D5:9C:65 RSSI -53 TYPE B SSID Wi2_OpenRoaming
+[serial]   <- DEV 34:3D:C4:D6:CD:48 RSSI -91 TYPE B SSID Buffalo-G-CD48
+[serial]   <- DEV 3A:77:07:6A:CD:27 RSSI -86 TYPE B SSID eufy Clean X10 Pro Omni-CD27
+[serial]   <- DEV 54:07:7D:78:14:02 RSSI -84 TYPE B SSID melab-2g
+[serial]   <- DEV 54:07:7D:78:2F:02 RSSI -78 TYPE B SSID melab-2g
+[serial]   <- DEV 54:07:7D:78:50:41 RSSI -84 TYPE B SSID melab-2g
+[serial]   <- DEV 54:9B:49:3C:79:AA RSSI -79 TYPE B SSID MiuraLab
+[serial]   <- DEV 60:84:BD:F1:C5:28 RSSI -71 TYPE B SSID Buffalo-G-C528
+[serial]   <- DEV 60:84:BD:F2:D3:40 RSSI -63 TYPE B SSID ap-2_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:23:20 RSSI -64 TYPE B SSID ap-3_bigdata-lab
+[serial]   <- DEV 60:84:BD:F3:69:30 RSSI -61 TYPE B SSID ap-1_bigdata-lab
+[serial]   <- DEV 64:A5:C3:68:66:8C RSSI -89 TYPE B SSID ISTC524HS
+[serial]   <- DEV 6C:8D:77:7F:F5:62 RSSI -86 TYPE B SSID odins-1x
+[serial]   <- DEV 6C:8D:77:7F:F5:64 RSSI -85 TYPE B SSID odins-visitor-1x
+[serial]   <- DEV 6C:E4:DA:15:56:66 RSSI -80 TYPE B SSID aterm-7ab32d-g
+[serial]   <- DEV 6C:E4:DA:4F:03:4E RSSI -85 TYPE B SSID aterm-39740f-g
+[serial]   <- DEV 80:91:33:12:D8:08 RSSI -54 TYPE B SSID DaikinAP53338
+{"pair_id": 6, "v5_port": "COM44", "upload": {"cmd": "arduino-cli compile --fqbn adafruit:nrf52:feather52840 -u -p COM45 C:\\Users\\tsune\\logbot\\LogbotArduinoCode\\logbot-v5\\v5_umineko_wifi_2026\\nrf_wifi_connection_test", "v5_port_arg": "COM44", "trigger_1200_baud": true, "dfu_port_detected": "COM45", "upload_port_used": "COM45", "returncode": 0, "success": true, "failure_marker": null, "stdout_tail": ["Sketch uses 54992 bytes (6%) of program storage space. Maximum is 815104 bytes.", "Global variables use 8220 bytes (3%) of dynamic memory, leaving 229348 bytes for local variables. Maximum is 237568 bytes.", "Upgrading target on COM45 with DFU package C:\\Users\\tsune\\AppData\\Local\\arduino\\sketches\\EA89A51AC28C3851A7CADCDE3FE70ED5\\nrf_wifi_connection_test.ino.zip. Flow control is disabled, Single bank, Touch disabled", "########################################", "########################################", "############################", "Activating new firmware", "Device programmed."], "stderr_tail": []}, "duration_sec": 90.0, "min_testok": 3, "ok_count": 1, "last_error": "serial read error: ClearCommError failed (PermissionError(13, 'ƒfƒoƒCƒX‚ªƒRƒ}ƒ“ƒh‚ğ”F¯‚Å‚«‚Ü‚¹‚ñB', None, 22))", "log_line_count": 95, "pass": false, "verify_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair06_20260718-183025_verify.json", "log_tail": [{"ts": "2026-07-18T18:34:49.187", "line": "  <- DEV 3A:77:07:6A:CD:27 RSSI -86 TYPE B SSID eufy Clean X10 Pro Omni-CD27"}, {"ts": "2026-07-18T18:34:49.187", "line": "  <- DEV 54:07:7D:78:14:02 RSSI -84 TYPE B SSID melab-2g"}, {"ts": "2026-07-18T18:34:49.228", "line": "  <- DEV 54:07:7D:78:2F:02 RSSI -78 TYPE B SSID melab-2g"}, {"ts": "2026-07-18T18:34:49.355", "line": "  <- DEV 54:07:7D:78:50:41 RSSI -84 TYPE B SSID melab-2g"}, {"ts": "2026-07-18T18:34:49.355", "line": "  <- DEV 54:9B:49:3C:79:AA RSSI -79 TYPE B SSID MiuraLab"}, {"ts": "2026-07-18T18:34:49.418", "line": "  <- DEV 60:84:BD:F1:C5:28 RSSI -71 TYPE B SSID Buffalo-G-C528"}, {"ts": "2026-07-18T18:34:49.482", "line": "  <- DEV 60:84:BD:F2:D3:40 RSSI -63 TYPE B SSID ap-2_bigdata-lab"}, {"ts": "2026-07-18T18:34:49.545", "line": "  <- DEV 60:84:BD:F3:23:20 RSSI -64 TYPE B SSID ap-3_bigdata-lab"}, {"ts": "2026-07-18T18:34:49.593", "line": "  <- DEV 60:84:BD:F3:69:30 RSSI -61 TYPE B SSID ap-1_bigdata-lab"}, {"ts": "2026-07-18T18:34:49.654", "line": "  <- DEV 64:A5:C3:68:66:8C RSSI -89 TYPE B SSID ISTC524HS"}, {"ts": "2026-07-18T18:34:49.714", "line": "  <- DEV 6C:8D:77:7F:F5:62 RSSI -86 TYPE B SSID odins-1x"}, {"ts": "2026-07-18T18:34:49.765", "line": "  <- DEV 6C:8D:77:7F:F5:64 RSSI -85 TYPE B SSID odins-visitor-1x"}, {"ts": "2026-07-18T18:34:49.834", "line": "  <- DEV 6C:E4:DA:15:56:66 RSSI -80 TYPE B SSID aterm-7ab32d-g"}, {"ts": "2026-07-18T18:34:49.892", "line": "  <- DEV 6C:E4:DA:4F:03:4E RSSI -85 TYPE B SSID aterm-39740f-g"}, {"ts": "2026-07-18T18:34:49.892", "line": "  <- DEV 80:91:33:12:D8:08 RSSI -54 TYPE B SSID DaikinAP53338"}]}
+
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair06_20260718-183025_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair06_20260718-183025_features.json
+{"pair_id": 6, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair06_20260718-183025.csv", "baseline_median_mA": 0.2, "wifi_on_mean_mA": 132.72529059528003, "global_max_mA": 260.0, "dropout_ratio": 0.015238671969188822, "outlier": false, "reasons": [], "verify_pass": false, "verify_ok_count": 1, "verify_last_error": "serial read error: ClearCommError failed (PermissionError(13, 'ƒfƒoƒCƒX‚ªƒRƒ}ƒ“ƒh‚ğ”F¯‚Å‚«‚Ü‚¹‚ñB', None, 22))"}

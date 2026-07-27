@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "pair_id": 1,
+    "v5_port": "COM15",
+    "upload": {
+      "returncode": 0,
+      "stdout_tail": [
+        "  File \"dfu\\dfu_transport_serial.py\", line 155, in send_init_packet",
+        "  File \"dfu\\dfu_transport_serial.py\", line 241, in send_packet",
+        "  File \"serial\\serialwin32.py\", line 306, in write",
+        "serial.serialutil.PortNotOpenError: Attempting to use a port that is not open",
+        "",
+        "Possible causes:",
+        "- Selected Bootloader version does not match the one on Bluefruit device.",
+        "    Please upgrade the Bootloader or select correct version in Tools->Bootloader.",
+        "- Baud rate must be 115200, Flow control must be off.",
+        "- Target is not in DFU mode. Ground DFU pin and RESET and release both to enter DFU mode."
+      ],
+      "stderr_tail": [
+        "Timed out waiting for acknowledgement from device."
+      ]
+    },
+    "duration_sec": 90.0,
+    "min_testok": 3,
+    "ok_count": 0,
+    "last_error": "serial read error: ClearCommError failed (PermissionError(13, 'デバイスがコマンドを認識できません。', None, 22))",
+    "log_line_count": 1,
+    "pass": false
+  },
+  "log_full": [
+    {
+      "ts": "2026-07-16T16:07:36.240",
+      "line": "Penbot_V5-1 動作テストプログラム  IMU : BMX160"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ÁßíÂæÖÊ©ü...
+COM11: VBUS ON (Âæ©Â∏∞)
+[phase0] arduino-cli Ç≈ nrf_power_test_all Å® COM60 èëÇ´çûÇ›
+[fallback] compile_and_upload_v5 é∏îs Å® logbot-ctl reset --double åoóRÇ≈ retry
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM59
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM59
+COM59: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181858.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181858.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM59
+COM59: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF („É™„É¨„ÉºÈñã)
+[wait sequence] écÇË 30s / 60s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON („É™„É¨„ÉºÈñâ)
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181858_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181858_features.json
+{"pair_id": 91, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair91_20260725-181858.csv", "baseline_median_mA": 0.2, "wifi_on_mean_mA": null, "global_max_mA": 9.2, "dropout_ratio": 0.01502828224083086, "outlier": false, "reasons": [], "verify_skipped": true}

@@ -1,0 +1,19 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ÁßíÂæÖÊ©ü...
+COM11: VBUS ON (Âæ©Â∏∞)
+[phase0] arduino-cli Ç≈ nrf_power_test_all Å® COM70 èëÇ´çûÇ›
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM69
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM69
+COM69: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair94_20260725-184335.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair94_20260725-184335.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM69
+COM69: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF („É™„É¨„ÉºÈñã)
+[wait sequence] écÇË 30s / 60s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON („É™„É¨„ÉºÈñâ)
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair94_20260725-184335_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair94_20260725-184335_features.json
+{"pair_id": 94, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair94_20260725-184335.csv", "baseline_median_mA": 0.0, "wifi_on_mean_mA": null, "global_max_mA": 8.7, "dropout_ratio": 0.014945935597396875, "outlier": false, "reasons": [], "verify_skipped": true}

@@ -1,0 +1,17 @@
+{
+  "pair_id": 91,
+  "if_port": "COM59",
+  "v5_port": "COM60",
+  "monitor_port": "COM10",
+  "monitor_baud": 9600,
+  "duration_sec": 60.0,
+  "csv_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair91_20260725-181632.csv",
+  "verify_path": null,
+  "start_ts": "2026-07-25T18:16:32.567978",
+  "aborted": "RuntimeError('電流測定用 firmware 書き込み失敗: marker=Target is not in DFU mode, stderr_tail=[]')",
+  "end_ts": "2026-07-25T18:17:11.945166",
+  "verify": {
+    "skipped": true,
+    "reason": "--no-verify"
+  }
+}

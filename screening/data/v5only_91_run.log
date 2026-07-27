@@ -1,0 +1,10 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM60 ‘‚«‚İ
+[fallback] compile_and_upload_v5 ¸”s ¨ logbot-ctl reset --double Œo—R‚Å retry
+[main] EXCEPTION: “d—¬‘ª’è—p firmware ‘‚«‚İ¸”s: marker=Target is not in DFU mode, stderr_tail=[]
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181632_meta.json
+[done] CSV –¢¶¬ or ‹ó (C:\Users\tsune\current_measurement\screening\data\screening_pair91_20260725-181632.csv)

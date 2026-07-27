@@ -1,0 +1,19 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM67 ‘‚«‚İ
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM66
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM66
+COM66: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair93_20260725-183352.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair93_20260725-183352.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM66
+COM66: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF (ãƒªãƒ¬ãƒ¼é–‹)
+[wait sequence] c‚è 30s / 60s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair93_20260725-183352_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair93_20260725-183352_features.json
+{"pair_id": 93, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair93_20260725-183352.csv", "baseline_median_mA": 40.3, "wifi_on_mean_mA": 42.943189509306265, "global_max_mA": 56.1, "dropout_ratio": 0.014922479754095108, "outlier": true, "reasons": ["baseline_median=40.30 mA > 1.0 (device1 Œ^ˆÙí‚Ì‹^‚¢)", "baseline_p95=46.42 mA > 20 (baseline ‚É‘å‚«‚ÈˆÙí spike)"], "verify_skipped": true}

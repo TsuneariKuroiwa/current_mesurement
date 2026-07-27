@@ -1,0 +1,31 @@
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[phase0] arduino-cli ‚Å nrf_power_test_all ¨ COM51 ‘‚«‚İ
+[fallback] compile_and_upload_v5 ¸”s ¨ logbot-ctl reset --double Œo—R‚Å retry
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py info COM50
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py tm COM50
+COM50: RTC synced to PC time
+[run] (background) C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\current_monitor.py --headless --port COM10 --baud 9600 --csv C:\Users\tsune\current_measurement\screening\data\screening_pair08_20260722-190458.csv
+[current_monitor headless] port=COM10 baud=9600 csv=C:\Users\tsune\current_measurement\screening\data\screening_pair08_20260722-190458.csv
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-ctl\logbot_ctl.py reset COM50
+COM50: CPU RESET pulsed (100ms)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py off
+COM11: VBUS OFF (ãƒªãƒ¬ãƒ¼é–‹)
+[wait sequence] c‚è 120s / 150s
+[wait sequence] c‚è 90s / 150s
+[wait sequence] c‚è 60s / 150s
+[wait sequence] c‚è 30s / 150s
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py on
+COM11: VBUS ON (ãƒªãƒ¬ãƒ¼é–‰)
+[run] C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\logbot\tools\logbot-usb\logbot_usb.py cycle --wait 1.0
+COM11: VBUS OFF, 1.0ç§’å¾…æ©Ÿ...
+COM11: VBUS ON (å¾©å¸°)
+[verify] starting: C:\Users\tsune\current_measurement\venv\Scripts\python.exe C:\Users\tsune\current_measurement\screening\screening_verify.py --pair-id 8 --v5-port COM51 --if-port COM50 --duration-sec 90.0 --out-prefix screening_pair08_20260722-190458
+[verify] arduino-cli ‚Å nrf_wifi_connection_test ¨ COM51 ‘‚«‚İ
+[fallback] compile_and_upload_v5 ¸”s ¨ logbot-ctl reset --double Œo—R‚Å retry
+{"pair_id": 8, "v5_port": "COM51", "upload_error": "ŒŸØ—p firmware ‘‚«‚İ¸”s: marker=Timed out waiting for acknowledgement, stderr_tail=['Timed out waiting for acknowledgement from device.']", "pass": false, "reason": "firmware upload failed"}
+
+[done] meta saved: C:\Users\tsune\current_measurement\screening\data\screening_pair08_20260722-190458_meta.json
+[done] features saved: C:\Users\tsune\current_measurement\screening\data\screening_pair08_20260722-190458_features.json
+{"pair_id": 8, "csv": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair08_20260722-190458.csv", "baseline_median_mA": 0.2, "wifi_on_mean_mA": 138.58551249547264, "global_max_mA": 288.8, "dropout_ratio": 0.015212080720160115, "outlier": false, "reasons": [], "verify_pass": false, "verify_ok_count": null, "verify_last_error": null}

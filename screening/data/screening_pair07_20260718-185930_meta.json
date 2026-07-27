@@ -1,0 +1,18 @@
+{
+  "pair_id": 7,
+  "if_port": "COM46",
+  "v5_port": "COM47",
+  "monitor_port": "COM10",
+  "monitor_baud": 9600,
+  "duration_sec": 150.0,
+  "csv_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair07_20260718-185930.csv",
+  "verify_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair07_20260718-185930_verify.json",
+  "start_ts": "2026-07-18T18:59:30.884704",
+  "aborted": "NameError(\"name 'if_port' is not defined\")",
+  "end_ts": "2026-07-18T18:59:37.533703",
+  "verify": {
+    "pass": true,
+    "ok_count": 3,
+    "returncode": 0
+  }
+}

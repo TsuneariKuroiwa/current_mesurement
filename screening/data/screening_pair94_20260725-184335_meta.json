@@ -1,0 +1,40 @@
+{
+  "pair_id": 94,
+  "if_port": "COM69",
+  "v5_port": "COM70",
+  "monitor_port": "COM10",
+  "monitor_baud": 9600,
+  "duration_sec": 60.0,
+  "csv_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair94_20260725-184335.csv",
+  "verify_path": null,
+  "start_ts": "2026-07-25T18:43:35.680310",
+  "power_upload": {
+    "cmd": "arduino-cli compile --fqbn adafruit:nrf52:feather52840 -u -p COM71 C:\\Users\\tsune\\logbot\\LogbotArduinoCode\\logbot-v5\\v5_umineko_wifi_2026\\nrf_power_test_all",
+    "v5_port_arg": "COM70",
+    "trigger_1200_baud": true,
+    "dfu_port_detected": "COM71",
+    "upload_port_used": "COM71",
+    "returncode": 0,
+    "success": true,
+    "failure_marker": null,
+    "stdout_tail": [
+      "Sketch uses 70796 bytes (8%) of program storage space. Maximum is 815104 bytes.",
+      "Global variables use 10752 bytes (4%) of dynamic memory, leaving 226816 bytes for local variables. Maximum is 237568 bytes.",
+      "Upgrading target on COM71 with DFU package C:\\Users\\tsune\\AppData\\Local\\arduino\\sketches\\F271FCCE36205B5F985DC93856FB1912\\nrf_power_test_all.ino.zip. Flow control is disabled, Single bank, Touch disabled",
+      "########################################",
+      "########################################",
+      "########################################",
+      "###################",
+      "Activating new firmware",
+      "Device programmed."
+    ],
+    "stderr_tail": []
+  },
+  "logbot_ctl_info_stdout": "Port      : COM69\nF/W       : V5.04\nBoard     : V5",
+  "vbus_off_ts": "2026-07-25T18:44:22.424238",
+  "end_ts": "2026-07-25T18:45:22.711959",
+  "verify": {
+    "skipped": true,
+    "reason": "--no-verify"
+  }
+}

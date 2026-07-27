@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "pair_id": 1,
+    "v5_port": "COM15",
+    "if_port": "COM12",
+    "upload_error": "検証用 firmware 書き込み失敗: marker=Target is not in DFU mode, stderr_tail=[]",
+    "pass": false,
+    "reason": "firmware upload failed"
+  },
+  "log_full": []
+}

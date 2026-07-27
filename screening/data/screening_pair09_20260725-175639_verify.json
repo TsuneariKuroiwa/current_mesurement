@@ -1,0 +1,667 @@
+{
+  "summary": {
+    "pair_id": 9,
+    "v5_port": "COM57",
+    "upload": {
+      "cmd": "arduino-cli compile --fqbn adafruit:nrf52:feather52840 -u -p COM58 C:\\Users\\tsune\\logbot\\LogbotArduinoCode\\logbot-v5\\v5_umineko_wifi_2026\\nrf_wifi_connection_test",
+      "v5_port_arg": "COM57",
+      "trigger_1200_baud": true,
+      "dfu_port_detected": "COM58",
+      "upload_port_used": "COM58",
+      "returncode": 0,
+      "success": true,
+      "failure_marker": null,
+      "stdout_tail": [
+        "Sketch uses 54992 bytes (6%) of program storage space. Maximum is 815104 bytes.",
+        "Global variables use 8220 bytes (3%) of dynamic memory, leaving 229348 bytes for local variables. Maximum is 237568 bytes.",
+        "Upgrading target on COM58 with DFU package C:\\Users\\tsune\\AppData\\Local\\arduino\\sketches\\EA89A51AC28C3851A7CADCDE3FE70ED5\\nrf_wifi_connection_test.ino.zip. Flow control is disabled, Single bank, Touch disabled",
+        "########################################",
+        "########################################",
+        "############################",
+        "Activating new firmware",
+        "Device programmed."
+      ],
+      "stderr_tail": []
+    },
+    "duration_sec": 90.0,
+    "min_testok": 3,
+    "ok_count": 2,
+    "last_error": "serial read error: ClearCommError failed (PermissionError(13, 'デバイスがコマンドを認識できません。', None, 22))",
+    "log_line_count": 158,
+    "pass": false
+  },
+  "log_full": [
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "nRF52840 WiFi接続確認テストプログラム"
+    },
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "5秒間隔で自動スキャンを実行します"
+    },
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "WiFi接続確認テスト"
+    },
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-25T18:00:58.318",
+      "line": "ESP32 電源ON..."
+    },
+    {
+      "ts": "2026-07-25T18:00:58.735",
+      "line": "  <- READY 受信 (411ms)"
+    },
+    {
+      "ts": "2026-07-25T18:00:59.286",
+      "line": "WiFiスキャン開始 (10秒)..."
+    },
+    {
+      "ts": "2026-07-25T18:00:59.289",
+      "line": "  <- OK SCAN 10000"
+    },
+    {
+      "ts": "2026-07-25T18:00:59.289",
+      "line": "  <- BEGIN_SCAN 10000 300"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.315",
+      "line": "  <- DEV 00:24:A5:65:CD:C0 RSSI -56 TYPE B SSID matsushita_lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.433",
+      "line": "  <- DEV 04:D4:C4:C4:72:78 RSSI -86 TYPE B SSID research_ap"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.490",
+      "line": "  <- DEV 18:EC:E7:BC:52:38 RSSI -89 TYPE B SSID Buffalo-G-5238"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.543",
+      "line": "  <- DEV 24:0A:64:E0:C7:92 RSSI -88 TYPE P SSID InnovationCafe"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.595",
+      "line": "  <- DEV 2C:1A:05:D5:9C:60 RSSI -50 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.600",
+      "line": "  <- DEV 2C:1A:05:D5:9C:61 RSSI -50 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.707",
+      "line": "  <- DEV 2C:1A:05:D5:9C:62 RSSI -50 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.707",
+      "line": "  <- DEV 2C:1A:05:D5:9C:63 RSSI -50 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.768",
+      "line": "  <- DEV 2C:1A:05:D5:9C:64 RSSI -50 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.830",
+      "line": "  <- DEV 2C:1A:05:D5:9C:65 RSSI -50 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:09.945",
+      "line": "  <- DEV 34:B8:83:64:BD:A3 RSSI -86 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.073",
+      "line": "  <- DEV 34:B8:83:64:BD:A5 RSSI -86 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.075",
+      "line": "  <- DEV 34:B8:83:65:5C:23 RSSI -85 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.081",
+      "line": "  <- DEV 3A:77:07:6A:CD:27 RSSI -82 TYPE B SSID eufy Clean X10 Pro Omni-CD27"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.185",
+      "line": "  <- DEV 4C:E6:76:AD:DC:50 RSSI -87 TYPE B SSID B414_guest"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.245",
+      "line": "  <- DEV 54:07:7D:78:14:02 RSSI -82 TYPE B SSID melab-2g"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.307",
+      "line": "  <- DEV 54:9B:49:3C:14:12 RSSI -80 TYPE B SSID aterm-7e5222-5p"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.365",
+      "line": "  <- DEV 5A:9B:49:3C:14:12 RSSI -80 TYPE B SSID aterm-7e5222-5s"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.425",
+      "line": "  <- DEV 60:84:BD:F1:C5:28 RSSI -75 TYPE B SSID Buffalo-G-C528"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.492",
+      "line": "  <- DEV 60:84:BD:F3:23:20 RSSI -58 TYPE B SSID ap-3_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.545",
+      "line": "  <- DEV 60:84:BD:F3:69:30 RSSI -54 TYPE B SSID ap-1_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.609",
+      "line": "  <- DEV 6C:E4:DA:15:56:66 RSSI -69 TYPE B SSID aterm-7ab32d-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.673",
+      "line": "  <- DEV 6C:E4:DA:4F:03:4E RSSI -86 TYPE B SSID aterm-39740f-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.675",
+      "line": "  <- DEV 80:91:33:12:D8:08 RSSI -50 TYPE B SSID DaikinAP53338"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.792",
+      "line": "  <- DEV 80:91:33:13:1D:D3 RSSI -52 TYPE B SSID DaikinAP24806"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.845",
+      "line": "  <- DEV 80:91:33:13:8E:70 RSSI -47 TYPE B SSID DaikinAP40122"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.954",
+      "line": "  <- DEV 84:78:48:E4:53:E5 RSSI -74 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:10.955",
+      "line": "  <- DEV 84:78:48:E4:55:19 RSSI -84 TYPE B SSID Higashi-AX"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.009",
+      "line": "  <- DEV 84:F1:47:17:04:A0 RSSI -82 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.115",
+      "line": "  <- DEV 84:F1:47:17:04:A1 RSSI -83 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.117",
+      "line": "  <- DEV 84:F1:47:17:04:A2 RSSI -82 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.178",
+      "line": "  <- DEV 84:F1:47:17:04:A3 RSSI -82 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.236",
+      "line": "  <- DEV 84:F1:47:17:04:A4 RSSI -81 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.345",
+      "line": "  <- DEV 84:F1:47:17:04:A5 RSSI -80 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.347",
+      "line": "  <- DEV 84:F1:47:33:74:60 RSSI -77 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.446",
+      "line": "  <- DEV 84:F1:47:33:74:61 RSSI -78 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.446",
+      "line": "  <- DEV 84:F1:47:33:74:62 RSSI -78 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.516",
+      "line": "  <- DEV 84:F1:47:33:74:63 RSSI -80 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.575",
+      "line": "  <- DEV 84:F1:47:33:74:64 RSSI -79 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.695",
+      "line": "  <- DEV 84:F1:47:33:74:65 RSSI -78 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.696",
+      "line": "  <- DEV 8A:78:48:E4:53:E5 RSSI -77 TYPE B SSID Higashi-AX"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.755",
+      "line": "  <- DEV 8A:78:48:E4:55:19 RSSI -86 TYPE B SSID mc-lab-wireless"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.817",
+      "line": "  <- DEV 8E:78:48:E4:53:E5 RSSI -76 TYPE B SSID mc-lab-wireless"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.819",
+      "line": "  <- DEV 9A:A6:7E:74:8A:D5 RSSI -79 TYPE B SSID mlab-wireless6"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.932",
+      "line": "  <- DEV 9E:A6:7E:74:8A:D5 RSSI -79 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.987",
+      "line": "  <- DEV AC:44:F2:24:57:38 RSSI -83 TYPE B SSID SuzukiLab_wifi"
+    },
+    {
+      "ts": "2026-07-25T18:01:11.994",
+      "line": "  <- DEV AC:44:F2:54:D7:58 RSSI -71 TYPE B SSID waka-lab-2.4G"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.050",
+      "line": "  <- DEV AC:44:F2:54:D7:59 RSSI -73 TYPE B SSID waka-lab-guest"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.167",
+      "line": "  <- DEV B0:4E:26:F0:DE:8E RSSI -85 TYPE B SSID PerEnd_Air1"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.225",
+      "line": "  <- DEV B6:4E:26:F0:DE:8F RSSI -85 TYPE B SSID PerEnd_Guest"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.285",
+      "line": "  <- DEV BC:C3:42:0E:54:30 RSSI -86 TYPE P SSID 001601C6DF45_G"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.407",
+      "line": "  <- DEV C0:25:A2:F3:7B:5E RSSI -78 TYPE B SSID aterm-171a0c-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.407",
+      "line": "  <- DEV C4:3C:EA:8F:D8:81 RSSI -58 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.412",
+      "line": "  <- DEV C6:3C:EA:8F:D8:83 RSSI -58 TYPE B SSID ap-4_2G_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.588",
+      "line": "  <- DEV C6:3C:EA:8F:D8:84 RSSI -58 TYPE B SSID ap-4_2G_bigdata-lab-WPA3"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.590",
+      "line": "  <- DEV DA:FB:B3:80:84:D6 RSSI -73 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.665",
+      "line": "  <- DEV EC:F0:0E:63:8A:59 RSSI -83 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.725",
+      "line": "  <- DEV F4:D1:08:B1:86:51 RSSI -79 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.795",
+      "line": "  <- DEV F8:16:0C:3E:C4:E1 RSSI -81 TYPE B SSID eufy Clean-B-C4E1"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.918",
+      "line": "  <- DEV F8:94:97:0B:48:E2 RSSI -83 TYPE B SSID Buffalo-2G-48E0-WPA3"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.918",
+      "line": "  <- DEV FC:19:28:76:A4:B8 RSSI -83 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-25T18:01:12.955",
+      "line": "  <- DEV FE:19:28:76:A4:B8 RSSI -82 TYPE B SSID Pro 2 D15_2876A4B8"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.027",
+      "line": "  <- SUMMARY DEVICES 62 CLOSE 16 FAR 46"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.028",
+      "line": "  <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.030",
+      "line": "  <- TARGET FA:13:E8:24:36:16 NOTFOUND"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.035",
+      "line": "  <- END_SCAN"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.035",
+      "line": "----------------------------------------"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.035",
+      "line": "62台のデバイスを検出"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.035",
+      "line": "-> テストOK"
+    },
+    {
+      "ts": "2026-07-25T18:01:13.035",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-25T18:01:18.035",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-25T18:01:18.035",
+      "line": "WiFi接続確認テスト"
+    },
+    {
+      "ts": "2026-07-25T18:01:18.035",
+      "line": "========================================"
+    },
+    {
+      "ts": "2026-07-25T18:01:18.035",
+      "line": "ESP32 電源ON..."
+    },
+    {
+      "ts": "2026-07-25T18:01:18.466",
+      "line": "  <- READY 受信 (428ms)"
+    },
+    {
+      "ts": "2026-07-25T18:01:19.015",
+      "line": "WiFiスキャン開始 (10秒)..."
+    },
+    {
+      "ts": "2026-07-25T18:01:19.017",
+      "line": "  <- OK SCAN 10000"
+    },
+    {
+      "ts": "2026-07-25T18:01:19.017",
+      "line": "  <- BEGIN_SCAN 10000 300"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.044",
+      "line": "  <- DEV 00:24:A5:65:CD:C0 RSSI -51 TYPE B SSID matsushita_lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.149",
+      "line": "  <- DEV 2C:1A:05:D5:9C:60 RSSI -50 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.255",
+      "line": "  <- DEV 2C:1A:05:D5:9C:61 RSSI -48 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.258",
+      "line": "  <- DEV 2C:1A:05:D5:9C:62 RSSI -48 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.319",
+      "line": "  <- DEV 2C:1A:05:D5:9C:63 RSSI -51 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.379",
+      "line": "  <- DEV 2C:1A:05:D5:9C:64 RSSI -48 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.485",
+      "line": "  <- DEV 2C:1A:05:D5:9C:65 RSSI -48 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.487",
+      "line": "  <- DEV 34:B8:83:64:BD:A0 RSSI -86 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.601",
+      "line": "  <- DEV 34:B8:83:64:BD:A1 RSSI -87 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.603",
+      "line": "  <- DEV 34:B8:83:64:BD:A2 RSSI -85 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.666",
+      "line": "  <- DEV 34:B8:83:64:BD:A4 RSSI -86 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.736",
+      "line": "  <- DEV 34:B8:83:64:BD:A5 RSSI -88 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.854",
+      "line": "  <- DEV 3A:77:07:6A:CD:27 RSSI -82 TYPE B SSID eufy Clean X10 Pro Omni-CD27"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.855",
+      "line": "  <- DEV 54:07:7D:78:50:41 RSSI -76 TYPE B SSID melab-2g"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.915",
+      "line": "  <- DEV 54:9B:49:3C:14:12 RSSI -81 TYPE B SSID aterm-7e5222-5p"
+    },
+    {
+      "ts": "2026-07-25T18:01:29.975",
+      "line": "  <- DEV 5A:9B:49:3C:14:12 RSSI -81 TYPE B SSID aterm-7e5222-5s"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.031",
+      "line": "  <- DEV 60:84:BD:F3:69:30 RSSI -50 TYPE B SSID ap-1_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.091",
+      "line": "  <- DEV 6C:8D:77:7F:F5:60 RSSI -76 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.154",
+      "line": "  <- DEV 6C:8D:77:7F:F5:64 RSSI -77 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.209",
+      "line": "  <- DEV 6C:8D:77:7F:F5:65 RSSI -78 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.275",
+      "line": "  <- DEV 6C:E4:DA:15:56:66 RSSI -73 TYPE B SSID aterm-7ab32d-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.335",
+      "line": "  <- DEV 6C:E4:DA:4F:03:4E RSSI -84 TYPE B SSID aterm-39740f-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.395",
+      "line": "  <- DEV 80:91:33:12:D8:08 RSSI -51 TYPE PB SSID DaikinAP53338"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.455",
+      "line": "  <- DEV 80:91:33:13:1D:D3 RSSI -59 TYPE PB SSID DaikinAP24806"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.562",
+      "line": "  <- DEV 80:91:33:13:8E:70 RSSI -48 TYPE PB SSID DaikinAP40122"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.564",
+      "line": "  <- DEV 84:78:48:E4:53:E5 RSSI -76 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.665",
+      "line": "  <- DEV 84:F1:47:17:04:A0 RSSI -81 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.670",
+      "line": "  <- DEV 84:F1:47:17:04:A1 RSSI -82 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.725",
+      "line": "  <- DEV 84:F1:47:17:04:A2 RSSI -83 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.785",
+      "line": "  <- DEV 84:F1:47:17:04:A3 RSSI -82 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.847",
+      "line": "  <- DEV 84:F1:47:17:04:A4 RSSI -82 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.955",
+      "line": "  <- DEV 84:F1:47:17:04:A5 RSSI -82 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:30.955",
+      "line": "  <- DEV 84:F1:47:19:0C:41 RSSI -82 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.020",
+      "line": "  <- DEV 84:F1:47:19:0C:43 RSSI -83 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.079",
+      "line": "  <- DEV 84:F1:47:19:0C:44 RSSI -85 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.185",
+      "line": "  <- DEV 84:F1:47:19:0C:45 RSSI -84 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.185",
+      "line": "  <- DEV 84:F1:47:33:74:60 RSSI -77 TYPE B SSID Wi2eap"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.285",
+      "line": "  <- DEV 84:F1:47:33:74:61 RSSI -77 TYPE B SSID eduroam"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.285",
+      "line": "  <- DEV 84:F1:47:33:74:62 RSSI -77 TYPE B SSID odins-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.355",
+      "line": "  <- DEV 84:F1:47:33:74:63 RSSI -76 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.418",
+      "line": "  <- DEV 84:F1:47:33:74:64 RSSI -78 TYPE B SSID odins-visitor-1x"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.419",
+      "line": "  <- DEV 84:F1:47:33:74:65 RSSI -77 TYPE B SSID Wi2_OpenRoaming"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.535",
+      "line": "  <- DEV 8A:78:48:E4:53:E5 RSSI -76 TYPE B SSID Higashi-AX"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.645",
+      "line": "  <- DEV 8E:78:48:E4:53:E5 RSSI -73 TYPE B SSID mc-lab-wireless"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.645",
+      "line": "  <- DEV 9E:A6:7E:74:8A:D5 RSSI -78 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.705",
+      "line": "  <- DEV A0:80:69:F5:74:EF RSSI -53 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.765",
+      "line": "  <- DEV AC:44:F2:24:57:38 RSSI -83 TYPE B SSID SuzukiLab_wifi"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.765",
+      "line": "  <- DEV AC:44:F2:54:D7:58 RSSI -72 TYPE B SSID waka-lab-2.4G"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.828",
+      "line": "  <- DEV AC:44:F2:54:D7:59 RSSI -73 TYPE B SSID waka-lab-guest"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.951",
+      "line": "  <- DEV B0:3C:DC:F7:95:31 RSSI -66 TYPE P SSID ap-4_5G_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:31.951",
+      "line": "  <- DEV B6:4E:26:F0:DE:8F RSSI -78 TYPE B SSID PerEnd_Guest"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.013",
+      "line": "  <- DEV BC:C3:42:0E:54:30 RSSI -80 TYPE P SSID 001601C6DF45_G"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.073",
+      "line": "  <- DEV BC:C3:42:20:D8:08 RSSI -74 TYPE P SSID Higashi-Lab-AM"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.131",
+      "line": "  <- DEV C0:25:A2:F3:7B:5E RSSI -79 TYPE B SSID aterm-171a0c-g"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.251",
+      "line": "  <- DEV C4:3C:EA:8F:D8:81 RSSI -54 TYPE B SSID <hidden>"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.316",
+      "line": "  <- DEV C6:3C:EA:8F:D8:83 RSSI -53 TYPE B SSID ap-4_2G_bigdata-lab"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.457",
+      "line": "  <- DEV C6:3C:EA:8F:D8:84 RSSI -53 TYPE B SSID ap-4_2G_bigdata-lab-WPA3"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.459",
+      "line": "  <- DEV EC:F0:0E:63:8A:59 RSSI -84 TYPE P SSID <broadcast>"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.515",
+      "line": "  <- DEV F4:D1:08:B1:86:51 RSSI -81 TYPE B SSID DIRECT-Cynap-Pure-01097504-QsXw"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.587",
+      "line": "  <- DEV F8:16:0C:3E:C4:E1 RSSI -84 TYPE B SSID eufy Clean-B-C4E1"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.653",
+      "line": "  <- DEV F8:94:97:0B:48:E2 RSSI -84 TYPE B SSID Buffalo-2G-48E0-WPA3"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.655",
+      "line": "  <- DEV FE:19:28:76:A4:B8 RSSI -82 TYPE B SSID Pro 2 D15_2876A4B8"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.724",
+      "line": "  <- SUMMARY DEVICES 62 CLOSE 16 FAR 46"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.725",
+      "line": "  <- TARGET F4:BE:EC:1E:9D:AA NOTFOUND"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.768",
+      "line": "  <- TARGET FA:13:E8:24:36:16 NOTFOUND"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.768",
+      "line": "  <- END_SCAN"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.768",
+      "line": "----------------------------------------"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.770",
+      "line": "62台のデバイスを検出"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.770",
+      "line": "-> テストOK"
+    },
+    {
+      "ts": "2026-07-25T18:01:32.772",
+      "line": "========================================"
+    }
+  ]
+}

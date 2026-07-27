@@ -1,0 +1,18 @@
+{
+  "pair_id": 1,
+  "if_port": "COM12",
+  "v5_port": "COM15",
+  "monitor_port": "COM10",
+  "monitor_baud": 9600,
+  "duration_sec": 900.0,
+  "csv_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair01_20260716-163818.csv",
+  "verify_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair01_20260716-163818_verify.json",
+  "start_ts": "2026-07-16T16:38:18.825658",
+  "aborted": "RuntimeError(\"電流測定用 firmware 書き込み失敗: marker=Timed out waiting for acknowledgement, stderr_tail=['Timed out waiting for acknowledgement from device.']\")",
+  "end_ts": "2026-07-16T16:38:53.241450",
+  "verify": {
+    "pass": false,
+    "ok_count": 0,
+    "returncode": 4
+  }
+}

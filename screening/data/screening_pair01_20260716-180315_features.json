@@ -1,0 +1,17 @@
+{
+  "pair_id": 1,
+  "csv_path": "C:\\Users\\tsune\\current_measurement\\screening\\data\\screening_pair01_20260716-180315.csv",
+  "sample_count": 9645,
+  "duration_s": 244.866146,
+  "baseline_median_mA": 0.1,
+  "baseline_p95_mA": 7.7,
+  "global_mean_mA": 36.48283048211509,
+  "global_median_mA": 0.3,
+  "global_max_mA": 294.4,
+  "global_std_mA": 63.341411859207035,
+  "wifi_on_mean_mA": 134.46672946495855,
+  "wifi_on_duration_s": 66.35000000000001,
+  "high_current_mean_mA": 145.17339566510836,
+  "high_current_duration_s": 58.825,
+  "dropout_ratio": 0.015278330880414859
+}
